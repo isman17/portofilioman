@@ -4,10 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="google-site-verification" content="Z0abE1gkzJgNBF0nbFM3y5hySjsf_vU4EVf4RAY_Qk4" />
-  <meta name="description" content="InduKita adalah website yang mendukung pengelolaan barang ataupun yang lainnya.">
+  <meta name="description" content="PortofilioMan | Portofolio nya IsMan">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
   <meta name="msapplication-TileImage" content="./images/icons/mstile-144x144.png">
-  <title> ** Induknya ** </title>
+  <title>PortofilioMan</title>
   <link rel="manifest" href="./manifest.json">
   <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
   <link rel="mask-icon" href="./images/safari-pinned-tab.svg" color="#050101">
@@ -18,26 +18,29 @@
 <body>
 
   <ul class="navbar">
-    <header><img src="./images/logo.png" alt="Logo"></header>
-    <ul id="link" class="link">
+    <ul class="logo">
+      <li><img src="./images/logo.png" alt="Logo"></li>
+      <li class="brand"><span>Portofilioman</span></li>
+    </ul>
+    <ul id="link" class="nav-link">
+      <li class="navli"><a href="./project.html" class="nava" title="ProjEct"><i class="fa fa-tasks"></i> ProjEct</a></li>      
+      <li class="navli"><a href="./progress.html" class="nava" title="ProGress"><i class="fa fa-tasks"></i> ProGress</a></li>      
       <li class="navli"><a href="./about.html" class="nava" title="Tentang Saya"><i class="fas fa-info"></i> AbOut</a></li>
       <li class="navli"><a href="./contact.html" class="nava" title="Hubungi Saya"><i class="fa fa-phone"></i> ContAct</a></li>
-      <li class="navli"><a href="./progress.html" class="nava" title="ProGress"><i class="fa fa-tasks"></i> ProGress</a></li>      
-      <li class="navli"><a href="./project.html" class="nava" title="ProjEct"><i class="fa fa-tasks"></i> ProjEct</a></li>      
-      <li class="navli">
-        <form action="" method="post">
-        <input type="search" id="isearch" placeholder="Apa yang anda pikirkan ?" /><button id="bsearch" type="submit"><i class="fa fa-search"></i></button></form>
-      </li>
       <li><button class="xbar" onclick="xbar()"><i class="fa fa-bars"></i></button></li>
     </ul>
     <li><button class="bar" onclick="bar()"><i class="fa fa-bars"></i></button></li>
   </ul>
-
-    <ul class="bc">
-      <li><a href="./" class="active">HoMe</a></li>
-    </ul>
+  
+      <ul class="bc">
+        <li><a href="./" class="disactive">HoMe</a></li>
+        <li><a href="./about.html" title="Tentang Saya" class="active">AbOut</a></li>
+      </ul>
 
     <main>
+      <p>
+       <h2 align="center" style="cursor:pointer;">About Me</h2><br><hr width="150px" style="margin: 0 auto;margin-top: -15px;"><br><p> Rasa yang tak pernah hilang dan susah tuk dilupakan. </p><br><b>Itulah Rasa !</b><br>Tak selalu bahagia dan duka <br>Keseimbangan itu yang paling utama <br>Namun tak mungkin seimbang antara kasih dan rasa <br><br>Tak perlu takut <br>Tuk menggapai <b><i>Masa Depan</i></b><br>Yang indah kan berlalu <br>Yang pahit pun kan berlalu <br><br><b style="cursor:pointer;">Lalu apa lagi yang ditunggu ?</b><br><br>Berusahalah dengan hati-hati <br>Tak usah takut kan hasil yang pasti <br>Dengan mencoba kita bisa mengetahui <br>Karna diam <b>Dunia</b> tak berarti <br><br>
+      </p>
       <h2 align="center" style="cursor:pointer;">Tak Sadar</h2><br><hr width="150px" style="margin: 0 auto;margin-top: -15px;"><br>
       <p>
         Hanya Sekedar Rindu yang dingin bagaikan angin. Melintas begitu cepat layaknya pesawat.
@@ -48,19 +51,9 @@
       </span>
     </main>
 
-
     <footer><a href="./"> IsMan &copy; 2018</a></footer>
     <script src="js/all.js"></script>
     <script src="js/jskita.js"></script>
-    <script async>
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('./sw.js').then(function(sw){
-          console.log("Hi ", sw.scope);
-        }).catch(function(err){
-          console.log(err);
-        });
-      }
-    </script>
-  </body>
 
+  </body>
 </html>
