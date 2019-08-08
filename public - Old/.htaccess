@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteBase /proj/public/
+
+RewriteRule ^/$    index.html  [L]
+RewriteRule ^/about$    about.html  [L]
+RewriteRule ^/contact$    contact.html  [L]

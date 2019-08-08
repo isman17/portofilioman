@@ -1,0 +1,238 @@
+
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: "comic sans ms",  sans-serif;
+  }
+  body{
+    overflow-x: hidden;
+    transition: all .3s;
+  }
+  header{
+    background-color: #000;
+    text-align: center;
+  }
+  header > img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin: 3px;
+    border-radius: 3px;
+  }
+  .navbar{
+    background-color: #000;
+    text-align: center !important;
+    padding: 10px;
+    box-shadow: 0 2px 10px 2px #000;
+  }
+  .navli, li{
+    display: inline-block;
+    list-style-type: none;
+  }
+  .nava{
+    color: #eee;
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: none;
+  }
+  .bar, .xbar{
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    display: none;
+    transition: all .3s;
+  }
+  .xbar{
+    left: 5px;
+  }
+  .bar:hover, .xbar:hover{
+    background-color: #fff;
+    color: #000;
+  }
+  .navli:hover .nava{
+    text-decoration: underline;
+  }
+  .bc{ 
+    padding: 10px;  
+  }
+  .bc .navli{
+    display: inline-block ;
+  }
+  .bc .nava, .active{
+    text-decoration: none;
+    color: #000;
+  }
+  .disactive{
+    text-decoration: underline
+    color: #0000ff;
+  }
+   .bc li+li::before{
+    content: "/\00a0";
+    color: #000;
+  }
+  .sample{
+    background-color: #777;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  .subsample{
+    border-radius: 5px;
+    background-color: #333;
+    padding: 10px;
+  }
+  .html{
+    width: 80%;
+  }
+  .js{
+    width: 50%;
+  }
+  .php{
+    width: 50%;
+  }
+  .server{
+    width: 80%;
+  }
+  .routing{
+    width: 70%;
+  }
+  .switching{
+    width: 50%;
+  }
+  .plist{
+    background-color: #333;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: all .3s;
+  }
+  .alist{
+    text-decoration: none;
+    color: #fff ;
+  }
+  .plist:hover{
+    box-shadow: 0 2px 20px 2px #333;
+    opacity: 0.7;
+  }
+  main{
+    border-radius: 5px;
+    margin: -10px auto;
+    padding: 10px;
+    height: 100vh;
+    color: #000;
+  }
+  main > p{
+    text-indent: 30px;
+    letter-spacing: 2px;
+  }
+  hr{
+    /* color: #000; */
+    background-color: #000;
+  }
+  footer{
+    background-color: #000;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    /* width: 100%; */
+  }
+  footer > a{
+    text-decoration: none;
+    color: #fff;
+  }
+  .fa-whatsapp:hover{
+    color: #00ff00;
+  }
+
+  #bsearch, #isearch{
+    padding: 10px;
+    border: none;
+    display: none;
+  }
+  #bsearch{
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-color: #666;
+    cursor: pointer;
+    color: #fff;
+  }
+  #isearch{
+    background-color: transparent;
+    color: #ddd;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+  #isearch::placeholder{
+    color: #ddd;
+  }
+
+  @media screen and (max-width:425px) {
+    .navbar{
+      position: relative;
+      height: 40px;
+    }
+    .navbar header{
+      position: absolute;
+      left: 0;
+      top: 5px;
+    }
+    .navbar header img{
+      width: 40px;
+      height: 40px;
+    }
+    .link{
+      position: fixed;
+      width: 0;
+      top: 0;
+      right: 0;
+      height: 100vh;
+      background-color: #000;
+      z-index: 3;
+      display: block;
+    }
+    .navli{
+      display: block;
+      background-color: #000;;
+      text-align: center;
+      color: #fff;
+    }
+   .nava{
+      display: block;
+    }
+    .bar{
+      display: block;
+    }
+    .xbar{
+      display: block ;
+    }
+    #isearch, #bsearch{
+      display: none;
+    }
+    #isearch{
+      width: 190px;
+    }
+    main{
+      font-size: 15px;
+      width: 90% ;
+    }
+  }
+
+  @media screen and (min-width:426px){
+    main{
+      width: 700px;
+    }
+    .bc{
+      width: 700px; 
+      margin: 0 auto;
+    }
+  }
