@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta http-equiv = "refresh" content = "0; url = ./project" />
   <meta charset="utf-8">
   <meta name="google-site-verification" content="Z0abE1gkzJgNBF0nbFM3y5hySjsf_vU4EVf4RAY_Qk4" />
   <meta name="description" content="PortofilioMan | Portofolio nya IsMan">
@@ -45,13 +46,27 @@
     <script src="js/all.js"></script>
     <script src="js/jskita.js"></script>
     <script async>
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('./sw.js').then(function(sw){
-          console.log("Portofilioman ", sw.scope);
-        }).catch(function(err){
-          console.log(err);
-        });
+      if ("serviceWorker" in navigator) {
+        if (navigator.serviceWorker.controller) {
+          console.log("Portofilioman Found");
+        } else {
+          // Register the service worker
+          navigator.serviceWorker
+            .register("./sw.js", {
+              scope: "./"
+            })
+            .then(function (reg) {
+              console.log("Portofilioman " + reg.scope);
+            });
+        }
       }
+      // if ('serviceWorker' in navigator) {
+      //   navigator.serviceWorker.register('./sw.js').then(function(sw){
+      //     console.log("Portofilioman ", sw.scope);
+      //   }).catch(function(err){
+      //     console.log(err);
+      //   });
+      // }
     </script>
   </body>
 
